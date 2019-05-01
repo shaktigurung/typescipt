@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './App.css';
-import Hello from './Hello';
+import Hello from './components/Hello';
+import StatefullHello from './components/StatefulHello';
 
 import logo from './logo.svg';
 
@@ -10,14 +11,13 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Welcome to React TypeScript </h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        <h2> Stateless Hello </h2>
         <Hello name="Daniel" enthusiasmLevel={3}/>
-        <Hello name="Bryan" enthusiasmLevel={1}/>
-        <Hello name="Rock"/>
+        <Hello name="Bryan" enthusiasmLevel={2}/>
+        <h2> Statefull Hello </h2>
+        <StatefullHello name="Rock"/>
       </div>
     );
   }
